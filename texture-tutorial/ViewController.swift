@@ -8,12 +8,10 @@
 
 import AsyncDisplayKit
 
-class ViewController: ASViewController<ASDisplayNode> {
+class ViewController: ASDKViewController<ASDisplayNode> {
     
-    init() {
-        
+    override init() {
         super.init(node: ASDisplayNode())
-        
         self.node.backgroundColor = .white
     }
     

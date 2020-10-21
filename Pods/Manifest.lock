@@ -1,43 +1,56 @@
 PODS:
-  - PINCache (3.0.1-beta.6):
-    - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
-    - PINCache/Core (= 3.0.1-beta.6)
-  - PINCache/Arc-exception-safe (3.0.1-beta.6):
+  - PINCache (3.0.2):
+    - PINCache/Arc-exception-safe (= 3.0.2)
+    - PINCache/Core (= 3.0.2)
+  - PINCache/Arc-exception-safe (3.0.2):
     - PINCache/Core
-  - PINCache/Core (3.0.1-beta.6):
-    - PINOperation (~> 1.1.0)
-  - PINOperation (1.1.2)
-  - PINRemoteImage/Core (3.0.0-beta.13):
+  - PINCache/Core (3.0.2):
+    - PINOperation (~> 1.2.0)
+  - PINOperation (1.2)
+  - PINRemoteImage/Core (3.0.1):
     - PINOperation
-  - PINRemoteImage/iOS (3.0.0-beta.13):
+  - PINRemoteImage/iOS (3.0.1):
     - PINRemoteImage/Core
-  - PINRemoteImage/PINCache (3.0.0-beta.13):
-    - PINCache (= 3.0.1-beta.6)
+  - PINRemoteImage/PINCache (3.0.1):
+    - PINCache (~> 3.0.1)
     - PINRemoteImage/Core
-  - Texture (2.7):
-    - Texture/PINRemoteImage (= 2.7)
-  - Texture/Core (2.7)
-  - Texture/PINRemoteImage (2.7):
-    - PINRemoteImage/iOS (= 3.0.0-beta.13)
+  - Texture (3.0.0):
+    - Texture/AssetsLibrary (= 3.0.0)
+    - Texture/Core (= 3.0.0)
+    - Texture/MapKit (= 3.0.0)
+    - Texture/Photos (= 3.0.0)
+    - Texture/PINRemoteImage (= 3.0.0)
+    - Texture/Video (= 3.0.0)
+  - Texture/AssetsLibrary (3.0.0):
+    - Texture/Core
+  - Texture/Core (3.0.0)
+  - Texture/MapKit (3.0.0):
+    - Texture/Core
+  - Texture/Photos (3.0.0):
+    - Texture/Core
+  - Texture/PINRemoteImage (3.0.0):
+    - PINRemoteImage/iOS (~> 3.0.0)
     - PINRemoteImage/PINCache
+    - Texture/Core
+  - Texture/Video (3.0.0):
     - Texture/Core
 
 DEPENDENCIES:
-  - Texture (= 2.7)
+  - Texture (= 3.0.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - PINCache
     - PINOperation
     - PINRemoteImage
     - Texture
 
 SPEC CHECKSUMS:
-  PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
-  PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
-  PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
-  Texture: 9d7e38965cf22ccd7cd9c249dd78b3f14e70ab6c
+  PINCache: bea7c404c360f6fe0f6ee783c5cd14e778fa2aab
+  PINOperation: 3a967a927e7867e61976c6cc23e5770416449fbc
+  PINRemoteImage: 3b7cedb118c2d357f87e9eabc7c81ba0202cb236
+  Texture: 2f109e937850d94d1d07232041c9c7313ccddb81
 
-PODFILE CHECKSUM: 5c71a80f6a053eab0ab30d6780d0be58dc7675e4
+PODFILE CHECKSUM: 904beb754fc08c165170d96997a95f089fe6c2fc
 
-COCOAPODS: 1.7.3
+COCOAPODS: 1.8.4
