@@ -6,6 +6,6 @@ target 'texture-tutorial' do
   use_frameworks!
 
   # Pods for texture-tutorial
-  pod 'Texture', '2.7'
+  pod 'Texture', '3.0.0'
 
 end
